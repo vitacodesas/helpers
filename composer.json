@@ -1,0 +1,21 @@
+{
+    "name": "vitacode/database",
+    "description": "Database package for Laravel by Vitacode",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Vitacode\\Database\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vitacode\\Database\\DatabaseServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}
