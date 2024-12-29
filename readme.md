@@ -93,6 +93,6 @@ Este paquete es de código abierto y se distribuye bajo la licencia MIT.
 ## Versionamientos
 
 Ejemplo de incremento de versión:
-Si tu paquete está en la versión 1.0.0 y agregas nuevas funcionalidades sin romper las anteriores, la siguiente versión sería 1.1.0.
-Si corriges errores pero no agregas nuevas funcionalidades, la siguiente versión sería 1.0.1.
-Si haces un cambio importante que no es compatible con versiones anteriores, la siguiente versión sería 2.0.0.
+1. Si tu paquete está en la versión 1.0.0 y agregas nuevas funcionalidades sin romper las anteriores, la siguiente versión sería 1.1.0.
+2. Si corriges errores pero no agregas nuevas funcionalidades, la siguiente versión sería 1.0.1.
+3. Si haces un cambio importante que no es compatible con versiones anteriores, la siguiente versión sería 2.0.0.
