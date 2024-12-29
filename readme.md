@@ -13,7 +13,7 @@ Este paquete para Laravel permite exportar la estructura de una base de datos y 
    composer require vitacode/database
    ```
 
-2. **Publicar el archivo de configuración** (si es necesario):
+<!-- 2. **Publicar el archivo de configuración** (si es necesario):
 
    Si deseas personalizar las configuraciones del paquete, puedes publicar el archivo de configuración con el siguiente comando:
 
@@ -21,7 +21,7 @@ Este paquete para Laravel permite exportar la estructura de una base de datos y 
    php artisan vendor:publish --provider="Vitacode\Database\DatabaseServiceProvider" --tag="config"
    ```
 
-   Esto generará un archivo de configuración `config/databaseexport.php` donde puedes modificar los parámetros según tus necesidades.
+   Esto generará un archivo de configuración `config/databaseexport.php` donde puedes modificar los parámetros según tus necesidades. -->
 
 ## Uso
 
@@ -30,17 +30,17 @@ Este paquete para Laravel permite exportar la estructura de una base de datos y 
 Este paquete permite exportar la estructura de la base de datos junto con los primeros 1000 registros de cada tabla. Para realizar la exportación, ejecuta el siguiente comando:
 
 ```bash
-php artisan database:export
+php artisan db:export
 ```
 
 Este comando generará un archivo de exportación que contiene la estructura de la base de datos y los primeros 1000 registros de cada tabla. El archivo será guardado en la carpeta `storage/app/exports`.
 
 #### Opciones del Comando de Exportación
 
-- **--tables**: Puedes especificar una lista de tablas a exportar, separadas por comas.
+- **--path**: Puedes especificar la ruta donde se almacenarán las exportaciones
 
   ```bash
-  php artisan database:export --tables=users,posts
+  php artisan db:export
   ```
 
 ### Comando de Importación
@@ -50,7 +50,7 @@ El paquete también permite importar la estructura y los datos desde un archivo 
 Para realizar la importación, utiliza el siguiente comando:
 
 ```bash
-php artisan database:import
+php artisan db:import
 ```
 
 Este comando leerá el archivo de exportación previamente generado desde `storage/app/exports` y restaurará la estructura y los primeros 1000 registros de las tablas.
