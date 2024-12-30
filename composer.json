@@ -1,21 +1,37 @@
 {
-    "name": "vitacode/database",
-    "description": "Database package for Laravel by Vitacode",
+    "name": "vitacode/helpers",
+    "description": "A simple helpers package to help you with your Laravel projects",
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Vitacode\\Database\\": "src/"
-        }
+            "Vitacode\\Helpers\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Vitacode\\Database\\DatabaseServiceProvider"
+                "Vitacode\\Helpers\\HelpersServiceProvider"
             ]
         }
+    },
+    "archive": {
+        "exclude": [
+            "/tests",
+            "/docs",
+            "/.git",
+            "/.github",
+            "/.env",
+            "composer.lock",
+            "*.log",
+            "*.md",
+            "/testbench"
+        ]
     },
     "require": {}
 }

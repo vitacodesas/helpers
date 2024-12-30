@@ -10,7 +10,7 @@ Este paquete para Laravel permite exportar la estructura de una base de datos y 
    Para instalar el paquete, ejecuta el siguiente comando en la raíz de tu proyecto Laravel:
 
    ```bash
-   composer require vitacode/database
+   composer require vitacode/helpers --dev
    ```
 
 <!-- 2. **Publicar el archivo de configuración** (si es necesario):
