@@ -59,8 +59,3 @@ function removeFile($path)
         ];
     }
 }
-
-function helloWorld()
-{
-    dd("Hello World");
-}
