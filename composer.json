@@ -33,5 +33,7 @@
             "/testbench"
         ]
     },
-    "require": {}
+    "require-dev": {
+        "orchestra/testbench": "^9.9"
+    }
 }
